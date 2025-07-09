@@ -1,0 +1,13 @@
+.alinhamento {
+  margin-top: 10%;
+}
+
+.main-bg {
+  background: url(../img/background.svg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.tamanho-bg {
+  height: 100vh;
+}

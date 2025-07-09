@@ -1,0 +1,180 @@
+:root {
+  --white: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-bg {
+  background: url(../img/background.svg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.tamanho-bg {
+  min-height: 80vh;
+}
+
+.alinhamento {
+  margin-top: 10%;
+  margin-left: 33%;
+}
+
+.container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  gap: 5%;
+  margin-left: -25%;
+}
+
+/* Estilo das imagens laterais */
+.side-image {
+  width: 20%;
+}
+.titulo {
+  margin-bottom: 3%;
+  margin-left: 6.5%;
+  color: var(--white);
+}
+
+.rodape {
+  margin-top: 10%;
+  height: 7vh;
+  background: var(--white);
+}
+
+.rodape p {
+  padding-top: 1%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-final {
+  margin-top: 5%;
+
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #0c162c;
+  color: #cbd5e1;
+  padding: 20px 40px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-logo span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.3s;
+}
+
+/* Barrinha que aparece no hover */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #334155;
+  margin: 20px 0;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.logo-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.3s;
+}
+
+.logo-link a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.logo-link a:hover {
+  color: #ffffff;
+}
+
+.logo-link a:hover::after {
+  color: #ffffff;
+  width: 100%;
+}

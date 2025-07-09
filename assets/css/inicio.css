@@ -1,0 +1,301 @@
+/* INICIO DA CONFIGURACAO GERAL DA PAGINA*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 100vh;
+    background-color: black;
+}
+
+/* FIM DA CONFIGURACAO GERAL DA PAGINA*/
+/* INICIO DA ESTILIZACAO DA NAVBAR*/
+
+.banner{
+    height: 84.5vh;
+    background-image: url(../img/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 5px 1%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .4s;
+    background: #fff;
+}
+
+.btn-ola{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-ola button{
+    width: auto;
+    height: 40px;
+    border: 0;
+    background-color: transparent;
+    color: #787575;
+    font-size: 32px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+#botao-header span{
+    color: black;
+}
+
+/* INICIO DA ESTILIZACAO DO DROPDOWN MENU*/
+
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    margin-top: 8px;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    display: none;
+    min-width: 200px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.dropdown-menu a{
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    transition: background-color 0.2s;
+}
+
+.dropdown-menu a:hover{
+    background-color: #f0f0f0;
+}
+
+.dropdown-menu.show{
+    display: block;
+}
+
+/* FIM DA ESTILIZACAO DO DROPDOWN MENU*/
+
+/* FIM DA ESTILIZACAO DA NAVBAR*/
+
+
+/* INICIO ESTILIZACAO BARRA PESQUISA*/
+
+.barrapesquisa {
+    position: absolute;
+    top: 50%; /* Verticalmente no meio */
+    left: 50%; /* Horizontalmente no meio */
+    transform: translate(-50%, -50%); /* Corrige o posicionamento */
+    width: 100%;
+    max-width: 1500px; /* Deixa mais larga */
+    padding: 0 20px;
+    z-index: 999;
+}
+
+
+#default-search {
+  height: 60px;         /* Altura do campo de busca */
+  font-size: 18px;       /* Tamanho da fonte */
+}
+
+.barrapesquisa button {
+  height: 40px;          /* Altura do botão */
+  padding: 0 20px;       /* Largura interna */
+  font-size: 16px;
+}
+
+
+
+/*FIM ESTILIZACAO BARRA PESQUISA*/
+
+
+/* INICIO ESTILIZACAO CARDS ALUNOS*/
+
+.cards-container {
+  display: flex;
+  flex-direction: column;  /* Um abaixo do outro */
+  align-items: center;     /* Centraliza horizontalmente */
+  gap: 20px;               /* Espaço entre os cards */
+  padding: 40px 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px 24px;
+    margin-bottom: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+    .nome {
+      flex: 1;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .matricula {
+      flex: 1;
+      text-align: center;
+      color: #555;
+    }
+
+    .foto {
+      width: 100px;
+      height: 100px;
+      border-radius: 5%;
+      object-fit: cover;
+      border: 2px solid #ddd;
+    }
+
+/* FIM ESTILIZACAO CARDS ALUNOS*/
+
+/* INICIO ESTILIZACAO FOOTER*/
+
+.footer {
+  background-color: #0c162c;
+  color: #cbd5e1;
+  padding: 20px 40px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-logo span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.3s;
+}
+
+/* Barrinha que aparece no hover */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #334155;
+  margin: 20px 0;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.logo-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.3s;
+}
+
+.logo-link a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.logo-link a:hover {
+  color: #ffffff;
+}
+
+.logo-link a:hover::after {
+  color: #ffffff;
+  width: 100%;
+}
+
+/* FIM ESTILIZACAO FOOTER*/

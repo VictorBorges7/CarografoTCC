@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    height: 100vh;
+    background-color: black;
+}
+
+.topo {
+  position: relative;
+  text-align: center; /* centraliza o h1 */
+  padding: 20px 40px;
+}
+
+.botao-voltar {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #c1c3ca;
+  color: #001336;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+  margin: 20px;
+  position: absolute;
+  right: 40px; /* distância da borda direita */
+}
+
+.botao-voltar:hover {
+  background-color: #1e293b;
+  color: white;
+}
+
+
+h1{
+    color: #ffffff;
+    font-size: 38px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+}
+
+h2{
+    color: #ffffff;
+    font-size: 38px;
+    padding-top: 30px;
+    margin-left: 100px;
+}
+
+p{
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 30px;
+    margin-left: 150px;
+    padding-right: 100px;
+}
+
+.lista li{
+    color: #ffffff;
+    font-size: 16px;
+    padding-top: 30px;
+    margin-left: 150px;
+    padding-right: 100px;
+}
+
+.banner hr{
+    border: none;
+    border-top: 1px solid #3d3d3d;
+    width: 90%;
+    margin: 20px auto;
+}
+
+.banner{
+    height: 110vh;
+    background-image: url(../img/background.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* INICIO ESTILIZACAO FOOTER */
+.footer {
+  background-color: #0c162c;
+  color: #cbd5e1;
+  padding: 20px 40px;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 0%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-logo span {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.footer-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links a {
+  color: #cbd5e1;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.3s;
+}
+
+/* Barrinha que aparece no hover */
+.footer-links a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+.footer-links a:hover::after {
+  width: 100%;
+}
+
+.footer hr {
+  border: none;
+  border-top: 1px solid #334155;
+  margin: 20px 0;
+}
+
+.footer-copy {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.logo-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  position: relative;
+  padding-bottom: 3px;
+  transition: color 0.3s;
+}
+
+.logo-link a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  left: 0;
+  bottom: 0;
+  transition: width 0.3s ease;
+}
+
+.logo-link a:hover {
+  color: #ffffff;
+}
+
+.logo-link a:hover::after {
+  color: #ffffff;
+  width: 100%;
+}
+
+/* FIM ESTILIZACAO FOOTER*/
