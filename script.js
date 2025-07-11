@@ -32,3 +32,36 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 // fim da parte de config para a barra de pesquisa nao dar conflito com a navbar
+
+// inicio animacao seta
+
+const botao1 = document.getElementById("botao-header");
+  const btnOla = document.getElementById("btnOla");
+
+  botao.addEventListener("click", (e) => {
+    e.stopPropagation(); // Impede que o clique feche imediatamente
+    btnOla.classList.toggle("ativo");
+  });
+
+  document.addEventListener("click", (e) => {
+    // Fecha se o clique for fora do botão e do menu
+    if (!btnOla.contains(e.target)) {
+      btnOla.classList.remove("ativo");
+    }
+  });
+
+  // fim animacao seta
+  
+  // inicio confirmacao logout 
+
+  document.getElementById("botao-sair").addEventListener("click", function (e) {
+    e.preventDefault(); // impede o link de redirecionar
+
+    const confirmarSaida = confirm("Tem certeza que deseja sair?");
+    
+    if (confirmarSaida) {
+      window.location.href = "Login/login.html";
+    }
+  });
+
+  // fim confirmacao logout

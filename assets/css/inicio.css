@@ -52,18 +52,49 @@ header{
 }
 
 .btn-ola button{
+    padding: 4px 12px;
     width: auto;
-    height: 40px;
+    height: auto;
     border: 0;
     background-color: transparent;
     color: #787575;
     font-size: 32px;
     cursor: pointer;
-    transition: .2s;
+    transition: background-color 0.2s, border-radius 0.2s, padding 0.2s;
+    outline: none;
 }
 
 #botao-header span{
     color: black;
+}
+
+.btn-ola button:hover,
+.btn-ola button:focus {
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    color: black;
+}
+
+
+.btn-ola button:hover {
+    background-color: #d3d3d3;
+    border-radius: 15px;
+    color: black;
+    padding: 0px 12px;
+    transition: background-color 0.2s, border-radius 0.2s, padding 0.2s;
+}
+
+.seta-icon {
+    transition: transform 0.3s ease;
+}
+
+.btn-ola.ativo .seta-icon {
+    transform: rotate(0deg); /* seta para cima */
+}
+
+/* Estado padrão: seta para baixo */
+.seta-icon {
+    transform: rotate(180deg); /* seta para baixo */
 }
 
 /* INICIO DA ESTILIZACAO DO DROPDOWN MENU*/
@@ -92,7 +123,7 @@ header{
 }
 
 .dropdown-menu a:hover{
-    background-color: #f0f0f0;
+    background-color: #d3d3d3;
 }
 
 .dropdown-menu.show{
@@ -108,28 +139,26 @@ header{
 
 .barrapesquisa {
     position: absolute;
-    top: 50%; /* Verticalmente no meio */
-    left: 50%; /* Horizontalmente no meio */
-    transform: translate(-50%, -50%); /* Corrige o posicionamento */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     width: 100%;
-    max-width: 1500px; /* Deixa mais larga */
+    max-width: 1500px;
     padding: 0 20px;
     z-index: 999;
 }
 
 
 #default-search {
-  height: 60px;         /* Altura do campo de busca */
-  font-size: 18px;       /* Tamanho da fonte */
+  height: 60px;         
+  font-size: 18px;       
 }
 
 .barrapesquisa button {
-  height: 40px;          /* Altura do botão */
-  padding: 0 20px;       /* Largura interna */
+  height: 40px;          
+  padding: 0 20px;       
   font-size: 16px;
 }
-
-
 
 /*FIM ESTILIZACAO BARRA PESQUISA*/
 
