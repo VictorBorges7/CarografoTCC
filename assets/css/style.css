@@ -16,7 +16,7 @@ html{
 /* INICIO DA ESTILIZACAO DA NAVBAR*/
 
 .banner{
-    height: 110vh;
+    height: 115vh;
     background-image: url(../img/background.svg);
     background-position: center;
     background-repeat: no-repeat;
@@ -183,7 +183,7 @@ header{
 
     .matricula {
       flex: 1;
-      text-align: center;
+      text-align: left;
       color: #555;
     }
 
@@ -195,7 +195,38 @@ header{
       border: 2px solid #ddd;
     }
 
+    .curso{
+      margin-right: 35px;
+    }
+
 /* FIM ESTILIZACAO CARDS ALUNOS*/
+
+/* INICIO ESTILIZACAO PAGINACAO*/
+
+.paginacao {
+  display: flex;
+  justify-content: center;
+  gap: 300px;
+  margin: 20px 0;
+}
+
+.botao-paginacao {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.botao-paginacao:hover {
+  background-color: #ccc;
+}
+
+
+/* FIM ESTILIZACAO PAGINACAO*/
 
 /* INICIO ESTILIZACAO FOOTER*/
 
