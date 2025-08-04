@@ -9,18 +9,24 @@
 
 html{
     height: 100vh;
-    background-color: black;
+    background-color: #0e2a47;
 }
+
+body{
+  overflow-x: hidden;
+}
+
 
 /* FIM DA CONFIGURACAO GERAL DA PAGINA*/
 /* INICIO DA ESTILIZACAO DA NAVBAR*/
 
 .banner{
-    height: 115vh;
+    min-height: 115vh;
     background-image: url(../img/background.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: 120px;
 }
 
 .container{
@@ -97,6 +103,22 @@ header{
     transform: rotate(180deg); /* seta para baixo */
 }
 
+@media (max-width: 1279px) {
+  #ola-texto {
+    display: none;
+  }
+}
+
+@media (max-width: 1023px){
+  #header-cefet{
+    display: none;
+  }
+
+  .container{
+    height: 100px;
+  }
+}
+
 /* INICIO DA ESTILIZACAO DO DROPDOWN MENU*/
 
 
@@ -153,14 +175,6 @@ header{
 
 /* INICIO ESTILIZACAO CARDS ALUNOS*/
 
-.cards-container {
-  display: flex;
-  flex-direction: column;  /* Um abaixo do outro */
-  align-items: center;     /* Centraliza horizontalmente */
-  gap: 20px;               /* Espaço entre os cards */
-  padding: 40px 20px;
-}
-
 .card {
     display: flex;
     justify-content: space-between;
@@ -199,7 +213,51 @@ header{
       margin-right: 35px;
     }
 
-/* FIM ESTILIZACAO CARDS ALUNOS*/
+    /* FIM ESTILIZACAO CARDS ALUNOS*/
+
+    @media (max-width: 768px) {
+      .flex {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+      }
+
+      .btn-ola {
+        align-self: flex-end;
+        margin-top: 10px;
+      }
+
+      .barrapesquisa {
+        position: static;
+        transform: none;
+        width: 80%;
+        margin: 10px auto;
+      }
+
+      .card {
+        /*flex-direction: column;*/
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        text-align: left;
+        width: 100%;
+      }
+
+      .foto {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .paginacao {
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+    }
+
+
+
 
 /* INICIO ESTILIZACAO PAGINACAO*/
 
