@@ -26,7 +26,7 @@ O **Carógrafo** é uma aplicação web desenvolvida com foco em facilitar a ide
 
 - **HTML5** + **CSS3** (Tailwind CSS)
 - **JavaScript**
-- **Node.js** + **Express.js** (Será incrementado)
+- **Node.js** + **Express.js** (Está sendo incrementado)
 - **Handlebars.js** (Será incrementado)
 - **MySQL** (Será incrementado)
 
