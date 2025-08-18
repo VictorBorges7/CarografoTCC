@@ -74,7 +74,7 @@
   cursor: pointer;
 }
 
-.button-submit {
+#button-submit {
   margin: 20px 0 10px 0;
   background-color: #151717;
   border: none;
@@ -127,7 +127,7 @@
     font-size: 14px;
   }
 
-  .button-submit,
+  #button-submit,
   .btn {
     height: 45px;
     font-size: 14px;

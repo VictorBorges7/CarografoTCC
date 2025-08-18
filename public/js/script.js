@@ -11,6 +11,11 @@
 const botao = document.getElementById('botao-header');
 const dropdown = document.getElementById('dropdownMenu');
 
+document.getElementById("button-submit").addEventListener("click", function(event) {
+  event.preventDefault();
+  window.location.href = "/pesquisa"
+});
+
 botao.addEventListener('click', (e) => {
 e.stopPropagation(); // Evita que clique no botão feche o menu
     dropdown.classList.toggle('show');
